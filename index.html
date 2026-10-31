@@ -1,24 +1,401 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Navori Studio</title>
-<meta name="description" content="Navori Studio: sites para negócios locais.">
-<link rel="icon" href="logo.png">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Navori Studio — Sites rápidos e sob medida para negócios locais</title>
+<meta name="description" content="Sites rápidos, bonitos e feitos sob medida para negócios locais: celular, Google, WhatsApp e domínio com cadeado. Veja uma prévia grátis antes de decidir.">
+<link rel="canonical" href="https://navoristudio.com/">
+<meta name="theme-color" content="#07080b">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Navori Studio">
+<meta property="og:title" content="Navori Studio — Sites rápidos e sob medida para negócios locais">
+<meta property="og:description" content="Do celular ao Google, com WhatsApp em um toque. Prévia grátis antes de decidir.">
+<meta property="og:url" content="https://navoristudio.com/">
+<meta property="og:image" content="https://navoristudio.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Navori Studio",
+  "url": "https://navoristudio.com/",
+  "logo": "https://navoristudio.com/img/icon-512.png",
+  "image": "https://navoristudio.com/img/og.png",
+  "description": "Sites rápidos e sob medida para negócios locais, com prévia grátis.",
+  "email": "lorenzo@navoristudio.com",
+  "telephone": "+55-11-93212-8821",
+  "areaServed": {"@type": "Country", "name": "Brasil"},
+  "priceRange": "R$ 590 – R$ 1.490",
+  "makesOffer": [
+    {"@type": "Offer", "name": "Página única", "price": "590", "priceCurrency": "BRL"},
+    {"@type": "Offer", "name": "Site padrão", "price": "790", "priceCurrency": "BRL"},
+    {"@type": "Offer", "name": "Site completo", "price": "1190", "priceCurrency": "BRL"}
+  ]
+}
+</script>
+<script src="assets/app.js" defer></script>
 </head>
 <body>
-<main>
-  <header><img src="logo.png" alt="Navori"><a href="./">Navori Studio</a></header>
-  <h1>Sites para negócios locais</h1>
-  <p>Faço sites simples e rápidos para pequenos negócios, pensados para o celular, com botão de WhatsApp, mapa e horários.</p>
-  <div class="card">
-    <p><strong>Contato</strong><br>
-    WhatsApp: <a href="https://wa.me/5511932128821">(11) 93212-8821</a><br>
-    E-mail: <a href="mailto:lorenzo@navoristudio.com">lorenzo@navoristudio.com</a></p>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav" id="topo">
+  <a class="brand" href="#topo" aria-label="Navori Studio, início">
+    <img src="img/mark.webp" width="32" height="32" alt="">
+    <span>Navori<b>Studio</b></span>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#engenharia">Por dentro</a>
+    <a href="#processo">Como funciona</a>
+    <a href="#precos">Preços</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="btn btn-sm btn-wa magnetic" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Navori%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
+    <svg class="i" aria-hidden="true"><use href="#wa"/></svg><span>WhatsApp</span>
+  </a>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="hero-gl" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal"><span class="dot"></span>Estúdio de sites para negócios locais</p>
+    <h1 id="hero-title" class="hero-title">
+      <span class="line"><span>Sites que fazem</span></span>
+      <span class="line"><span>o seu negócio parecer</span></span>
+      <span class="line"><span class="grad">tão bom quanto ele é.</span></span>
+    </h1>
+    <p class="lead reveal">Rápidos, bonitos e feitos sob medida, do celular ao Google, com WhatsApp em um toque. Você vê uma <strong>prévia grátis</strong> antes de decidir qualquer coisa.</p>
+    <div class="cta-row reveal">
+      <a class="btn btn-grad magnetic" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Quero%20uma%20pr%C3%A9via%20gr%C3%A1tis%20do%20site%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
+        Quero minha prévia grátis <svg class="i" aria-hidden="true"><use href="#arrow"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#trabalhos">Ver trabalhos</a>
+    </div>
+    <dl class="hud reveal" aria-label="Medição ao vivo deste site no seu aparelho">
+      <div><dt>carregou em</dt><dd data-metric="lcp">—</dd></div>
+      <div><dt>peso</dt><dd data-metric="kb">—</dd></div>
+      <div><dt>arquivos</dt><dd data-metric="req">—</dd></div>
+      <div><dt>conexão</dt><dd data-metric="tls">—</dd></div>
+    </dl>
+    <p class="hud-note reveal">↑ medido agora, no seu aparelho. É assim que o seu site vai se comportar.</p>
   </div>
-  <footer><a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="exclusao-de-dados.html">Exclusão de dados</a></footer>
+  <a class="scroll-cue" href="#faixa" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" id="faixa" aria-label="O que todo site inclui">
+  <div class="marquee-track">
+    <span>Feito pro celular</span><i></i><span>Carrega rápido</span><i></i><span>WhatsApp em um toque</span><i></i><span>Aparece no Google</span><i></i><span>Mapa e horários</span><i></i><span>Domínio com cadeado</span><i></i><span>Sem mensalidade de hospedagem</span><i></i><span>2 rodadas de ajustes</span><i></i>
+    <span aria-hidden="true">Feito pro celular</span><i></i><span aria-hidden="true">Carrega rápido</span><i></i><span aria-hidden="true">WhatsApp em um toque</span><i></i><span aria-hidden="true">Aparece no Google</span><i></i><span aria-hidden="true">Mapa e horários</span><i></i><span aria-hidden="true">Domínio com cadeado</span><i></i><span aria-hidden="true">Sem mensalidade de hospedagem</span><i></i><span aria-hidden="true">2 rodadas de ajustes</span><i></i>
+  </div>
+</div>
+
+<!-- DEMO -->
+<section class="section demo" aria-labelledby="demo-title">
+  <div class="wrap demo-grid">
+    <div class="demo-copy">
+      <p class="kicker reveal">// sob medida</p>
+      <h2 id="demo-title" class="reveal">Cada negócio, <span class="grad">um site diferente.</span></h2>
+      <p class="reveal">Nada de modelo genérico com o seu nome trocado. Cores, textos, seções e chamadas pensados para o que você faz e para quem te procura. Escolha um ramo e veja:</p>
+      <div class="chips reveal" role="tablist" aria-label="Escolha um ramo">
+        <button role="tab" aria-selected="true" data-demo="contabil">Contabilidade</button>
+        <button role="tab" aria-selected="false" data-demo="clinica">Clínica</button>
+        <button role="tab" aria-selected="false" data-demo="pousada">Pousada</button>
+        <button role="tab" aria-selected="false" data-demo="restaurante">Restaurante</button>
+        <button role="tab" aria-selected="false" data-demo="oficina">Oficina</button>
+      </div>
+      <p class="fine reveal">Exemplos ilustrativos, com negócios fictícios.</p>
+    </div>
+    <div class="phone-stage reveal">
+      <div class="phone" aria-live="polite">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen" id="demo-screen" data-theme="contabil">
+          <div class="ds-bar"><span class="ds-logo"></span><span class="ds-name" data-f="name">Contábil Horizonte</span><span class="ds-menu" aria-hidden="true"></span></div>
+          <div class="ds-hero">
+            <p class="ds-tag" data-f="tag">Contabilidade em Campinas</p>
+            <p class="ds-h" data-f="h">Sua empresa em dia, sem dor de cabeça.</p>
+            <span class="ds-btn" data-f="cta">Falar com um contador</span>
+          </div>
+          <div class="ds-cards">
+            <span data-f="c1">Abertura de empresa</span>
+            <span data-f="c2">Imposto de renda</span>
+            <span data-f="c3">Folha de pagamento</span>
+          </div>
+          <div class="ds-map"><span>Como chegar</span><span data-f="hours">Seg–Sex 8h–18h</span></div>
+          <span class="ds-wa" aria-hidden="true"><svg class="i"><use href="#wa"/></svg></span>
+        </div>
+      </div>
+      <div class="phone-glow" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="trabalhos" aria-labelledby="work-title">
+  <div class="wrap">
+    <p class="kicker reveal">// trabalhos</p>
+    <h2 id="work-title" class="reveal">Sites no ar, <span class="grad">de verdade.</span></h2>
+    <p class="section-lead reveal">Clientes reais primeiro. Depois, projetos conceito que mostram até onde dá pra ir em cada ramo.</p>
+
+    <div class="work-real">
+      <article class="work reveal tilt">
+        <a href="https://paivas.com.br/" target="_blank" rel="noopener" class="work-media" aria-label="Abrir o site da Organização Contábil Paiva">
+          <img class="shot-d" src="img/paiva-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Página inicial do site da Organização Contábil Paiva no computador">
+          <img class="shot-m" src="img/paiva-m.webp" width="520" height="1125" loading="lazy" decoding="async" alt="O mesmo site no celular">
+        </a>
+        <div class="work-meta">
+          <span class="badge live"><span class="pulse"></span>No ar</span>
+          <h3>Organização Contábil Paiva</h3>
+          <p>Contabilidade em Guarulhos/SP. Serviços explicados com clareza e contato a um toque, no computador e no celular.</p>
+          <a class="link" href="https://paivas.com.br/" target="_blank" rel="noopener">paivas.com.br <svg class="i" aria-hidden="true"><use href="#out"/></svg></a>
+        </div>
+      </article>
+      <article class="work reveal tilt">
+        <a href="https://contabilidadeacesso.com.br/" target="_blank" rel="noopener" class="work-media" aria-label="Abrir o site da Acesso Contabilidade">
+          <img class="shot-d" src="img/acesso-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Página inicial do site da Acesso Contabilidade no computador">
+          <img class="shot-m" src="img/acesso-m.webp" width="520" height="1125" loading="lazy" decoding="async" alt="O mesmo site no celular">
+        </a>
+        <div class="work-meta">
+          <span class="badge live"><span class="pulse"></span>No ar</span>
+          <h3>Acesso Contabilidade</h3>
+          <p>Contabilidade para médicos e dentistas em Joinville/SC, com WhatsApp em destaque e endereço a um toque.</p>
+          <a class="link" href="https://contabilidadeacesso.com.br/" target="_blank" rel="noopener">contabilidadeacesso.com.br <svg class="i" aria-hidden="true"><use href="#out"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="work-concepts">
+      <a class="concept reveal tilt" href="https://lorenzomfc0098-spec.github.io/sites-conceito/contabil/" target="_blank" rel="noopener">
+        <img src="img/conceito-contabil-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Projeto conceito Ponto Contábil">
+        <span class="badge">Projeto conceito</span>
+        <h3>Ponto Contábil</h3><p>Contabilidade para pequenas empresas</p>
+      </a>
+      <a class="concept reveal tilt" href="https://lorenzomfc0098-spec.github.io/sites-conceito/fisio/" target="_blank" rel="noopener">
+        <img src="img/conceito-fisio-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Projeto conceito Movimento Fisioterapia e Pilates">
+        <span class="badge">Projeto conceito</span>
+        <h3>Movimento Fisioterapia</h3><p>Avaliação e agendamento pelo WhatsApp</p>
+      </a>
+      <a class="concept reveal tilt" href="https://lorenzomfc0098-spec.github.io/sites-conceito/pousada/" target="_blank" rel="noopener">
+        <img src="img/conceito-pousada-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Projeto conceito Pousada Vale das Hortênsias">
+        <span class="badge">Projeto conceito</span>
+        <h3>Pousada Vale das Hortênsias</h3><p>Chalés com lareira na serra</p>
+      </a>
+    </div>
+    <p class="fine reveal">Projetos conceito usam negócios fictícios, feitos para mostrar estilos possíveis.</p>
+  </div>
+</section>
+
+<!-- ENGINEERING / BENTO -->
+<section class="section" id="engenharia" aria-labelledby="eng-title">
+  <div class="wrap">
+    <p class="kicker reveal">// por dentro</p>
+    <h2 id="eng-title" class="reveal">Bonito por fora. <span class="grad">Engenharia por dentro.</span></h2>
+    <p class="section-lead reveal">O que o seu cliente não vê, mas sente: velocidade, Google entendendo quem você é e um caminho curto até a sua mensagem.</p>
+
+    <div class="bento">
+      <article class="cell cell-speed reveal spot">
+        <div class="gauge" aria-hidden="true">
+          <svg viewBox="0 0 120 70"><path class="g-track" d="M10 62 A50 50 0 0 1 110 62"/><path class="g-fill" d="M10 62 A50 50 0 0 1 110 62"/></svg>
+          <span class="g-val" data-metric="lcp-big">—</span>
+        </div>
+        <h3>Carrega num piscar</h3>
+        <p>Código enxuto, imagens em WebP e nada de construtor pesado. O número acima é o tempo que esta página levou no seu aparelho.</p>
+      </article>
+
+      <article class="cell cell-serp reveal spot">
+        <div class="serp" aria-hidden="true">
+          <span class="serp-url">seunegocio.com.br › contabilidade</span>
+          <span class="serp-title">Seu Negócio — Contabilidade em Campinas</span>
+          <span class="serp-desc">Abertura de empresas, imposto de renda e folha de pagamento. Fale pelo WhatsApp…</span>
+          <span class="serp-rich"><b>Aberto</b> · Fecha às 18:00 · Como chegar</span>
+        </div>
+        <h3>O Google entende quem você é</h3>
+        <p>Título, descrição e dados estruturados (Schema.org) com endereço, telefone e horário, do jeito que o Google lê.</p>
+      </article>
+
+      <article class="cell cell-wa reveal spot">
+        <div class="chat" aria-hidden="true">
+          <span class="bubble out">Olá! Vi o site e gostaria de um orçamento.</span>
+          <span class="bubble in typing"><i></i><i></i><i></i></span>
+        </div>
+        <h3>WhatsApp em um toque</h3>
+        <p>A mensagem já vai escrita. O cliente só aperta enviar.</p>
+      </article>
+
+      <article class="cell cell-resp reveal spot">
+        <div class="resize" aria-hidden="true"><span class="rz-box"><span class="rz-bar"></span><span class="rz-l"></span><span class="rz-l s"></span><span class="rz-btn"></span></span><span class="rz-px">360px</span></div>
+        <h3>Feito pro celular primeiro</h3>
+        <p>Testado de telas de 360px até monitores grandes. Botões do tamanho do dedo.</p>
+      </article>
+
+      <article class="cell cell-lock reveal spot">
+        <div class="lock" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>https://<b>seunegocio.com.br</b></span></div>
+        <h3>Seu domínio, com cadeado</h3>
+        <p>O endereço .com.br fica no seu nome. Conexão segura (HTTPS) desde o primeiro dia.</p>
+      </article>
+
+      <article class="cell cell-zero reveal spot">
+        <p class="zero"><span>R$</span>0</p>
+        <h3>Sem mensalidade de hospedagem</h3>
+        <p>Você paga só o domínio, uns R$ 40 por ano no registro.br.</p>
+      </article>
+
+      <article class="cell cell-term reveal">
+        <div class="term" role="img" aria-label="Animação de terminal mostrando as etapas de publicação de um site">
+          <div class="term-bar"><i></i><i></i><i></i><span>deploy — seunegocio.com.br</span></div>
+          <pre class="term-body" aria-hidden="true"></pre>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="processo" aria-labelledby="proc-title">
+  <div class="wrap">
+    <p class="kicker reveal">// como funciona</p>
+    <h2 id="proc-title" class="reveal">Do primeiro oi ao <span class="grad">site no ar.</span></h2>
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-n">01</span>
+        <h3>Você chama</h3>
+        <p>Pelo WhatsApp ou e-mail. Conta do seu negócio. Se já tiver Instagram, Google ou site antigo, eu aproveito o que estiver lá.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-n">02</span>
+        <h3>Prévia grátis</h3>
+        <p>Em até 3 dias úteis você recebe um link pra ver o site funcionando no celular. Sem compromisso.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-n">03</span>
+        <h3>Ajustes</h3>
+        <p>Duas rodadas pra mexer em textos, fotos, cores, seções, telefones e horários.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-n">04</span>
+        <h3>No ar</h3>
+        <p>Publicado no seu domínio, com cadeado. Pagamento por PIX: metade pra começar a versão final, metade quando o site é publicado.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="precos" aria-labelledby="price-title">
+  <div class="wrap">
+    <p class="kicker reveal">// preços</p>
+    <h2 id="price-title" class="reveal">Preço fechado. <span class="grad">Sem mensalidade.</span></h2>
+    <p class="section-lead reveal">Pagamento único. A prévia é grátis, e você só paga se quiser publicar.</p>
+    <div class="prices">
+      <article class="price reveal spot">
+        <h3>Página única</h3>
+        <p class="amount"><small>R$</small>590</p>
+        <p class="price-desc">Uma página completa: apresentação, serviços, fotos, horários, mapa e WhatsApp.</p>
+        <p class="for">Ideal para MEI, profissional autônomo, oficina.</p>
+        <a class="btn btn-ghost" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Tenho%20interesse%20na%20p%C3%A1gina%20%C3%BAnica%20(R%24%20590)." target="_blank" rel="noopener">Quero esse</a>
+      </article>
+      <article class="price featured reveal spot">
+        <span class="ribbon">Recomendado</span>
+        <h3>Site padrão</h3>
+        <p class="amount"><small>R$</small>790</p>
+        <p class="price-desc">Até 5 seções ou páginas, galeria e serviços detalhados.</p>
+        <p class="for">Ideal para contabilidade, clínica, pousada pequena.</p>
+        <a class="btn btn-grad" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Tenho%20interesse%20no%20site%20padr%C3%A3o%20(R%24%20790)." target="_blank" rel="noopener">Quero esse</a>
+      </article>
+      <article class="price reveal spot">
+        <h3>Site completo</h3>
+        <p class="amount"><small>a partir de R$</small>1.190</p>
+        <p class="price-desc">Muitas páginas e serviços, conteúdo extenso.</p>
+        <p class="for">Ideal para quem tem muita coisa pra mostrar.</p>
+        <a class="btn btn-ghost" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Tenho%20interesse%20no%20site%20completo." target="_blank" rel="noopener">Quero esse</a>
+      </article>
+    </div>
+    <ul class="includes reveal" aria-label="Incluso em todos os planos">
+      <li>Versão para celular</li><li>Botão de WhatsApp</li><li>Mapa e como chegar</li><li>Horários</li><li>Links das redes</li><li>SEO básico</li><li>Publicação e domínio ligado</li><li>2 rodadas de ajustes</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="section who" aria-labelledby="who-title">
+  <div class="wrap who-inner reveal">
+    <img src="img/mark.webp" width="72" height="72" alt="" loading="lazy">
+    <div>
+      <h2 id="who-title">Você fala direto com quem faz.</h2>
+      <p>A Navori é o estúdio do Lorenzo. Sem atendente, sem intermediário: a mesma pessoa cuida do seu site do primeiro rascunho até ele estar no ar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="duvidas" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <div>
+      <p class="kicker reveal">// dúvidas</p>
+      <h2 id="faq-title" class="reveal">Perguntas <span class="grad">frequentes.</span></h2>
+      <p class="section-lead reveal">Não achou a sua? Manda no WhatsApp.</p>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Preciso pagar mensalidade?</summary><div><p>Não para a hospedagem. Você paga só o domínio (o endereço .com.br), uns R$ 40 por ano no registro.br, e ele fica no seu nome.</p></div></details>
+      <details class="reveal"><summary>Quanto tempo leva?</summary><div><p>A prévia sai em até 3 dias úteis. A versão final fica pronta em até 5 dias úteis depois que você mandar o que faltar.</p></div></details>
+      <details class="reveal"><summary>E se eu não gostar da prévia?</summary><div><p>Você não paga nada. A prévia é grátis e sem compromisso.</p></div></details>
+      <details class="reveal"><summary>Como é o pagamento?</summary><div><p>Por PIX: 50% para começar a versão final e 50% quando o site for publicado.</p></div></details>
+      <details class="reveal"><summary>Posso pedir mudanças?</summary><div><p>Sim. São duas rodadas de ajustes incluídas: textos, fotos, cores, seções, telefones e horários.</p></div></details>
+      <details class="reveal"><summary>Já tenho um site antigo. Dá pra aproveitar?</summary><div><p>Dá. Eu aproveito textos e fotos que você já tem e coloco o site novo no mesmo endereço.</p></div></details>
+      <details class="reveal"><summary>Vocês fazem loja virtual ou agendamento online?</summary><div><p>Isso é orçado à parte, porque envolve sistema. Chama no WhatsApp e conta o que você precisa.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" aria-labelledby="final-title">
+  <div class="wrap final-inner reveal">
+    <h2 id="final-title">Bora ver como o seu site <span class="grad">pode ficar?</span></h2>
+    <p>Manda uma mensagem. Em até 3 dias úteis você recebe a prévia, de graça.</p>
+    <div class="cta-row center">
+      <a class="btn btn-grad btn-lg magnetic" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Quero%20uma%20pr%C3%A9via%20gr%C3%A1tis%20do%20site%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
+        <svg class="i" aria-hidden="true"><use href="#wa"/></svg> Chamar no WhatsApp
+      </a>
+      <a class="btn btn-ghost btn-lg" href="mailto:lorenzo@navoristudio.com?subject=Quero%20um%20site">lorenzo@navoristudio.com</a>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a class="brand" href="#topo"><img src="img/mark.webp" width="28" height="28" alt="" loading="lazy"><span>Navori<b>Studio</b></span></a>
+    <p>WhatsApp <a href="https://wa.me/5511932128821" target="_blank" rel="noopener">(11) 93212-8821</a> · <a href="mailto:lorenzo@navoristudio.com">lorenzo@navoristudio.com</a></p>
+    <p class="legal"><a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos de uso</a> · <a href="exclusao-de-dados.html">Exclusão de dados</a></p>
+    <p class="copy">© 2026 Navori Studio</p>
+  </div>
+</footer>
+
+<a class="fab-wa" href="https://wa.me/5511932128821?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Navori%20e%20quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg class="i" aria-hidden="true"><use href="#wa"/></svg>
+</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm.01 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.23 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+</svg>
 </body>
 </html>

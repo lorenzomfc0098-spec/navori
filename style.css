@@ -1,16 +1,18 @@
-:root{--bg:#0f1017;--card:#171824;--text:#ececf3;--muted:#a3a3b8;--accent:#f0457a;--line:#2a2b3a}
+/* Páginas legais — mesma identidade do site principal */
+:root{--bg:#07080b;--card:rgba(255,255,255,.035);--text:#f3f4f7;--muted:#a3a9b6;--accent:#ff6bb5;--line:rgba(255,255,255,.09);--grad:linear-gradient(110deg,#7b2ff7,#f2309a 52%,#ff7a1a)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 "Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:2px;background:var(--grad)}
 main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
-header{display:flex;align-items:center;gap:12px;margin-bottom:32px}
-header img{width:44px;height:44px;border-radius:10px}
-header a{color:var(--text);text-decoration:none;font-weight:700;font-size:18px}
-h1{font-size:28px;line-height:1.25;margin:0 0 8px}
-h2{font-size:19px;margin:32px 0 8px}
-p,li{color:var(--text)}
+header{display:flex;align-items:center;gap:12px;margin-bottom:40px}
+header img{width:36px;height:36px}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.02em}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.03em;margin:0 0 8px}
+h2{font-size:19px;margin:36px 0 8px;letter-spacing:-.01em}
+p,li{color:#d9dce3}
 .muted{color:var(--muted);font-size:14px}
 a{color:var(--accent)}
 ul{padding-left:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:24px 0}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 footer a{color:var(--muted)}
