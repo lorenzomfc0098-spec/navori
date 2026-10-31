@@ -1,5 +1,5 @@
 /* Navori Studio — service worker: pages network-first (always fresh), assets cache-first. */
-const V = "navori-v3";
+const V = "navori-v4";
 const CORE = ["./", "index.html", "assets/app.js", "assets/fonts/sora.woff2", "img/mark.webp"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(V).then((c) => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => {

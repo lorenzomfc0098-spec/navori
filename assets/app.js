@@ -7,7 +7,6 @@
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
 
   document.documentElement.classList.remove("no-js");
-  requestAnimationFrame(() => document.body.classList.add("loaded"));
 
   /* ---------- reveal on scroll ---------- */
   const io = new IntersectionObserver((entries) => {
@@ -203,7 +202,7 @@ gl_FragColor=vec4(vec3(.027,.031,.043)+col*1.15,1.);}`;
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
     const a = gl.getAttribLocation(pr, "a"); gl.enableVertexAttribArray(a); gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
     const uR = gl.getUniformLocation(pr, "r"), uT = gl.getUniformLocation(pr, "t"), uM = gl.getUniformLocation(pr, "m");
-    const scale = 0.5 * Math.min(devicePixelRatio || 1, 1.5);
+    const scale = (finePointer ? 0.5 : 0.35) * Math.min(devicePixelRatio || 1, 1.5);
     const size = () => { c.width = Math.max(1, c.clientWidth * scale | 0); c.height = Math.max(1, c.clientHeight * scale | 0); gl.viewport(0, 0, c.width, c.height); };
     size(); addEventListener("resize", size, { passive: true });
     let mx = 0.6, my = 0.55, tx = mx, ty = my, visible = true, t0 = performance.now(), raf = 0;
@@ -220,7 +219,19 @@ gl_FragColor=vec4(vec3(.027,.031,.043)+col*1.15,1.);}`;
     frame(performance.now());
     c.classList.add("on");
   };
-  addEventListener("load", () => (window.requestIdleCallback || setTimeout)(startGL, { timeout: 1500 }), { once: true });
+  // Compiling the shader costs a few hundred ms on slow phones: do it on the first sign of life (pointer, touch,
+  // scroll, key) or after a few seconds, never during the page load itself. Until then the CSS gradient shows.
+  let glStarted = false;
+  const kick = () => {
+    if (glStarted) return;
+    glStarted = true;
+    ["pointermove", "touchstart", "scroll", "keydown"].forEach((ev) => removeEventListener(ev, kick));
+    (window.requestIdleCallback || setTimeout)(startGL, { timeout: 800 });
+  };
+  addEventListener("load", () => {
+    ["pointermove", "touchstart", "scroll", "keydown"].forEach((ev) => addEventListener(ev, kick, { passive: true, once: true }));
+    setTimeout(kick, 6000);
+  }, { once: true });
 
   /* ---------- offline-ready ---------- */
   if ("serviceWorker" in navigator && location.protocol === "https:") {

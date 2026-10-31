@@ -26,8 +26,8 @@
 @font-face{font-family:"Sora";src:url(assets/fonts/sora.woff2) format("woff2");font-weight:400 800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"JetBrains Mono";src:url(assets/fonts/jetbrains-mono.woff2) format("woff2");font-weight:400 500;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122,U+2212}
 /* fallback with Sora's proportions, so the swap doesn't move the layout */
-@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:90%;font-weight:400 600}
-@font-face{font-family:"Sora Fallback";src:local("Arial Bold"),local("Arial");size-adjust:87%;font-weight:700 800}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:114%;font-weight:400 600}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:108%;font-weight:700 800}
 
 :root{
   --bg:#07080b; --bg2:#0c0e13; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06);
@@ -93,7 +93,7 @@ p{margin:0}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 .78rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:9px 14px;border:1px solid var(--line2);border-radius:999px;background:rgba(7,8,11,.5);backdrop-filter:blur(6px)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:ping 2.2s infinite}
 @keyframes ping{70%{box-shadow:0 0 0 9px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-.hero-title{font-size:clamp(2.6rem,7.4vw,6.1rem);font-weight:800;letter-spacing:-.045em;line-height:.98;margin:26px 0 26px;max-width:14ch}
+.hero-title{font-size:clamp(2.6rem,7.4vw,6.1rem);font-weight:800;letter-spacing:-.045em;line-height:.98;margin:26px 0 26px;max-width:11em}
 .hero-title .line{display:block}
 /* transform-only entrance: text is painted at once (fast LCP), then glides into place */
 .rise{animation:rise 1s var(--ease) both}
@@ -102,7 +102,7 @@ p{margin:0}
 .hero-title .line:nth-child(3)>span{animation-delay:.12s}
 .lead.rise{animation-delay:.18s}.cta-row.rise{animation-delay:.24s}.hud.rise{animation-delay:.3s}
 @keyframes rise{from{transform:translateY(22px)}}
-.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted);max-width:52ch}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted);max-width:32em}
 .lead strong{color:var(--text);font-weight:600}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .cta-row.center{justify-content:center}
