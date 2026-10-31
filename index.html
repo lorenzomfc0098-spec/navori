@@ -206,6 +206,16 @@ p{margin:0}
 @media (max-width:900px){.work{grid-template-columns:1fr;gap:18px}.work-concepts{grid-template-columns:1fr}}
 .tilt{transform-style:preserve-3d}
 
+.lh{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:40px}
+.ring{position:relative;display:grid;justify-items:center;gap:8px;width:92px}
+.ring svg{width:80px;height:80px;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:2.6}
+.r-bg{stroke:rgba(12,206,107,.15)}
+.r-fg{stroke:#0cce6b;stroke-linecap:round;stroke-dasharray:0 100;transition:stroke-dasharray 1.6s var(--ease) .2s}
+.lh.in .r-fg{stroke-dasharray:var(--v) 100}
+.ring b{position:absolute;top:0;height:80px;display:grid;place-items:center;font:600 1.45rem/1 var(--mono);color:#0cce6b}
+.ring span{font-size:.8rem;color:var(--muted);text-align:center;line-height:1.25}
+.lh-note{color:var(--dim);font-size:.85rem;margin-top:16px;max-width:70ch}
 /* bento */
 .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:56px}
 .cell{position:relative;padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;min-height:250px}
@@ -517,6 +527,10 @@ p{margin:0}
     <p class="kicker reveal">// por dentro</p>
     <h2 id="eng-title" class="reveal">Bonito por fora. <span class="grad">Engenharia por dentro.</span></h2>
     <p class="section-lead reveal">O que o seu cliente não vê, mas sente: velocidade, Google entendendo quem você é e um caminho curto até a sua mensagem.</p>
+    <div class="lh reveal" role="img" aria-label="Notas do Google Lighthouse deste site no celular: desempenho 99, acessibilidade 100, boas práticas 100, SEO 100">
+      <div class="ring" style="--v:99"><svg viewBox="0 0 36 36" aria-hidden="true"><circle class="r-bg" cx="18" cy="18" r="15.9155"/><circle class="r-fg" cx="18" cy="18" r="15.9155"/></svg><b>99</b><span>Desempenho</span></div><div class="ring" style="--v:100"><svg viewBox="0 0 36 36" aria-hidden="true"><circle class="r-bg" cx="18" cy="18" r="15.9155"/><circle class="r-fg" cx="18" cy="18" r="15.9155"/></svg><b>100</b><span>Acessibilidade</span></div><div class="ring" style="--v:100"><svg viewBox="0 0 36 36" aria-hidden="true"><circle class="r-bg" cx="18" cy="18" r="15.9155"/><circle class="r-fg" cx="18" cy="18" r="15.9155"/></svg><b>100</b><span>Boas práticas</span></div><div class="ring" style="--v:100"><svg viewBox="0 0 36 36" aria-hidden="true"><circle class="r-bg" cx="18" cy="18" r="15.9155"/><circle class="r-fg" cx="18" cy="18" r="15.9155"/></svg><b>100</b><span>SEO</span></div>
+    </div>
+    <p class="lh-note reveal">Notas deste site no Google Lighthouse, a ferramenta do Google que mede qualidade de sites. Versão celular, medido em 31/10/2026. No computador: 100 em tudo.</p>
 
     <div class="bento">
       <article class="cell cell-speed reveal spot">
