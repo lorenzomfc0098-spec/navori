@@ -211,7 +211,7 @@ p{margin:0}
 .rz-bar{height:8px;border-radius:4px;background:var(--grad)}
 .rz-l{height:6px;border-radius:3px;background:rgba(255,255,255,.15);width:85%}.rz-l.s{width:55%}
 .rz-btn{margin-top:auto;height:12px;width:40%;border-radius:6px;background:var(--wa)}
-.rz-px{position:absolute;right:0;top:0;font:500 .75rem/1 var(--mono);color:var(--dim)}
+.rz-px{position:absolute;right:0;bottom:-6px;font:500 .75rem/1 var(--mono);color:var(--dim)}
 @keyframes rz{to{width:96%}}
 .lock{display:flex;align-items:center;gap:10px;margin-bottom:auto;padding:12px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line2);width:max-content;max-width:100%;font:500 .9rem/1 var(--mono);color:var(--muted)}
 .lock b{color:var(--text);font-weight:500}
